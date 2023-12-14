@@ -3,7 +3,7 @@ import { UserModel } from './user.model';
 
 @Injectable()
 export class UserService {
-  users: UserModel[] = [];
+  private users: UserModel[] = [];
 
   addUser({
     name,
